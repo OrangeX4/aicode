@@ -1,4 +1,6 @@
 import importlib
-from scripts.checkout import current_branch
+from scripts.branch import current_branch, checkout
 
-importlib.import_module('tasks.main.' + current_branch)
+# importlib.import_module(f'tasks.{current_branch.name}.main')
+
+checkout('main')
